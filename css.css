@@ -1,8 +1,11 @@
+. {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 100%;
     height: 100%;
-    padding: 0;
-    margin: 0;
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -33,15 +36,59 @@ body {
     float: left;
 }
 
-#div1 {}
-
-input {
-    width: 250px;
-    height: 30px;
-    margin-top: 1px;
+.searchbtn {
+    width: 50%;
+    height: 50px;
+    padding-top: 40px;
+    padding-left: 40px;
 }
 
-button {}
+.searchbtn input {
+    width: 350px;
+    height: 30px;
+    padding-left: 30px;
+}
+
+.searchbtn button {
+    width: 60px;
+    color: wheat;
+    background-color: black;
+    line-break: auto;
+    position: absolute;
+}
+
+.header_user_info {
+    width: 50%;
+    height: 50px;
+    display: inline-table;
+    float: right;
+}
+
+.header_user_info ul {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+}
+
+.header_user_info ul li {
+    display: inline-table;
+    list-style-type: none;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.header_user_info ul li a {
+    text-decoration: none;
+    display: block;
+    color: brown;
+    font-size: 20px;
+}
+
+.header_user_info ul li a:hover {
+    background-color: black;
+    color: white;
+}
 
 .left_column {
     width: 20%;
@@ -50,31 +97,42 @@ button {}
     float: left;
 }
 
-.menu_block_left a {
-    text-decoration: none;
-}
-
 h4 {
     text-align: center;
 }
 
-ul {
+.menu_block_left ul li {
     list-style-type: none;
-    font-size: larger;
-}
-
-.dropdown {
     position: relative;
-    display: inline-block;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid;
 }
 
-.dropdown_content {
+.menu_block_left ul li a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu_block_left ul li a:hover {
+    color: white;
+    background-color: black;
+    font-size: 26px;
+}
+
+.menu_block_left ul li>.sub_menu {
     display: none;
-    position: absolute;
+    width: 250px;
+    height: auto;
+    left: 250px;
+    top: 0;
 }
 
-.dropdown :hover.dropdown_content {
+.menu_block_left ul li:hover>.sub_menu {
     display: block;
+    position: absolute;
+    background-color: white;
 }
 
 .right_column {
