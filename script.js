@@ -16,11 +16,13 @@ function showSlides() {
     slideIndex++;
     //nếu đang ở slide cuối cùng thì chuyển về slide đầu
     if (slideIndex > slides.length - 1) {
-        slideIndex = 0
+        slideIndex = 0;
     }
+    setTimeout(showSlides, 5000);
 }
-showSlides(slideIndex = 0);
+
+showSlides((slideIndex = 0));
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides((slideIndex = n));
 }

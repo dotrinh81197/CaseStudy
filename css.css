@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     font-family: "Times New Roman", Times, serif;
     background-image: url(image/Background.jpg);
@@ -12,110 +12,140 @@ body {
     background-size: cover;
 }
 
-.container {
-    width: 1370px;
-    height: 100%;
-    margin: auto;
+@media screen and (min-width: 600px) {
+    .left-header {
+        width: 20%;
+        height: 300px;
+        float: left;
+    }
+    .header_container {
+        width: 100%;
+        height: 300px;
+    }
+    #logo {
+        width: 100%;
+        height: 100%;
+    }
+    .right_header {
+        width: 80%;
+        height: 300px;
+        float: left;
+    }
+    .right_header .banner {
+        width: 100%;
+        height: 300px;
+    }
+    #banner {
+        width: 100%;
+        height: 100%;
+    }
+    .searchbtn {
+        width: 50%;
+        height: 50px;
+        padding-top: 40px;
+        padding-left: 40px;
+        text-align: center;
+    }
+    .searchbtn input {
+        width: 350px;
+        height: 30px;
+        text-align: center;
+    }
+    .searchbtn button {
+        width: 60px;
+        color: wheat;
+        background-color: black;
+        line-break: auto;
+        position: absolute;
+        padding: 0.9px;
+    }
+    .header_user_info {
+        width: 40%;
+        height: 50px;
+        display: inline-table;
+        float: right;
+    }
+    .header_user_info ul {
+        list-style-type: none;
+        color: white;
+        text-align: center;
+    }
+    .header_user_info ul li {
+        display: inline-table;
+        list-style-type: none;
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .header_user_info ul li a {
+        text-decoration: none;
+        display: block;
+        color: brown;
+        font-size: 20px;
+        float: right;
+    }
+    .header_user_info ul li a:hover {
+        color: white;
+    }
+    .left_column {
+        width: 20%;
+        height: 100%;
+        font-size: larger;
+        float: left;
+    }
+    .left_column .menu_block_left .menu {
+        width: 20%;
+        height: 100%;
+    }
+    h2 {
+        text-align: center;
+        color: brown;
+    }
+    .right_column {
+        width: 80%;
+        height: 100%;
+        float: left;
+    }
+    .right_column .slideshow_container img {
+        width: 100%;
+        height: 100%;
+    }
+    .slideshow_container {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+    .slides {
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+    /* định dạng chấm chuyển slide*/
+    .dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: rgb(224, 204, 204);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        text-align: center;
+    }
+    .active,
+    .dot:hover {
+        background-color: red;
+    }
 }
 
-.left-header {
-    width: 20%;
-    height: 300px;
-    float: left;
-}
-
-.header_container {
-    width: 100%;
-    height: 300px;
-}
-
-#logo {
-    width: 100%;
-    height: 100%;
-}
-
-.right_header {
-    width: 80%;
-    height: 300px;
-    float: left;
-}
-
-.right_header .banner {
-    width: 100%;
-    height: 300px;
-}
-
-#banner {
-    width: 100%;
-    height: 100%;
-}
-
-.searchbtn {
-    width: 50%;
-    height: 50px;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-}
-
-.searchbtn input {
-    width: 350px;
-    height: 30px;
-    text-align: center;
-}
-
-.searchbtn button {
-    width: 60px;
-    color: wheat;
-    background-color: black;
-    line-break: auto;
-    position: absolute;
-    padding: 0.9px;
-}
-
-.header_user_info {
-    width: 40%;
-    height: 50px;
-    display: inline-table;
-    float: right;
-}
-
-.header_user_info ul {
-    list-style-type: none;
-    color: white;
-    text-align: center;
-}
-
-.header_user_info ul li {
-    display: inline-table;
-    list-style-type: none;
-    width: 120px;
-    height: 50px;
-    line-height: 50px;
-}
-
-.header_user_info ul li a {
-    text-decoration: none;
-    display: block;
-    color: brown;
-    font-size: 20px;
-    float: right;
-}
-
-.header_user_info ul li a:hover {
-    color: white;
-}
-
-.left_column {
-    width: 20%;
-    height: 100%;
-    font-size: larger;
-    float: left;
-}
-
-h2 {
-    text-align: center;
-    color: brown;
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1370px;
+        height: 100%;
+        margin: auto;
+    }
 }
 
 .menu_block_left ul li {
@@ -151,49 +181,4 @@ h2 {
     position: absolute;
     background-color: black;
     z-index: 1;
-}
-
-.right_column {
-    width: 80%;
-    height: 100%;
-    float: left;
-}
-
-.right_column .slideshow_container img {
-    width: 100%;
-    height: 100%;
-}
-
-.slideshow_container {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    margin: auto;
-    text-align: center;
-}
-
-.slides {
-    display: none;
-    height: 100%;
-    width: 100%;
-}
-
-
-/* định dạng chấm chuyển slide*/
-
-.dot {
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: rgb(224, 204, 204);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    text-align: center;
-}
-
-.active,
-.dot:hover {
-    background-color: red;
 }
