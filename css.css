@@ -229,7 +229,7 @@ img {
 
 .pagination {
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .pagination ul li {
@@ -244,5 +244,68 @@ img {
 }
 
 .footer_container {
-    background-color: silver;
+    width: 100%;
+}
+
+.footer_container .footer_top {
+    width: 100%;
+    height: 25%;
+    font-size: large;
+}
+
+.footer_container .footer_top .footer_1 {
+    color: white;
+    float: left;
+    width: 40%;
+}
+
+.footer_container .footer_top .footer_1 input {
+    padding: 1em;
+    margin-top: 1rem;
+    border-radius: 0.5em;
+}
+
+.footer_container .footer_top .footer_2 {
+    width: 60%;
+    float: left;
+}
+
+.footer_container .footer_top .footer_2 ul li {
+    list-style-type: none;
+    display: inline-table;
+    padding: 1em;
+}
+
+.footer_container .footer_top .footer_2 ul li #footer_2 {
+    background-color: pink;
+    padding: 0.3rem;
+    border-radius: 0.5em;
+}
+
+.footer_container .footer_top .footer_2 ul li a {
+    text-decoration: solid;
+    color: red;
+    font-size: large;
+    font-weight: bolder;
+}
+
+span {
+    font-style: italic;
+    font-size: larger;
+    font-weight: bolder;
+    color: #fab1a0;
+    text-align: center;
+}
+
+.footer_container .footer_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    width: 100%;
+    font-size: larger;
+    color: #d63031;
+}
+
+.footer_container .footer_bottom ul li {
+    list-style-type: none;
 }
